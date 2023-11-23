@@ -7,7 +7,7 @@ const { URL } = require("./Config");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(cors({origin:"https://book-store-eight-wheat.vercel.app/"}));
+app.use(cors({origin:"*"}));
 //Homepage
 app.get("/", (req, res) => {
   res.status(200).send("Homepage");
