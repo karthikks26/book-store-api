@@ -7,7 +7,7 @@ const { URL } = require("./Config");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin:"https://bookstoreapi-two.vercel.app/"}));
 //Homepage
 app.get("/", (req, res) => {
   res.status(200).send("Homepage");
